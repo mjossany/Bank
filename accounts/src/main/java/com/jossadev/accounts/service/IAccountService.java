@@ -5,4 +5,6 @@ import com.jossadev.accounts.dto.CustomerDto;
 public interface IAccountService {
 
     void createAccount(CustomerDto customerDto);
+
+    CustomerDto fetchAccount(String mobileNumer);
 }
