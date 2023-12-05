@@ -13,7 +13,8 @@ import lombok.Data;
 public class AccountsDto {
 
     @Schema(
-            description = "Accounts"
+            description = "Accounts",
+            example = "1212121212"
     )
     @NotEmpty(message = "AccountNumber can not be a null or empty")
     @Pattern(regexp = "(^$|[0-9]{10})", message = "AccountNumber must be 10 digits")
@@ -27,7 +28,8 @@ public class AccountsDto {
     private String accountType;
 
     @Schema(
-            description = "BranchAddress can not be a null or empty"
+            description = "BranchAddress can not be a null or empty",
+            example = "123 New York"
     )
     @NotEmpty(message = "BranchAddress can not be a null or empty")
     private String branchAddress;
